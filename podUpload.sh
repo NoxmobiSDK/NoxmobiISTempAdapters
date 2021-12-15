@@ -2,7 +2,7 @@
 
 # ===============修改podspec的版本号===========================
 
-PodName="NoxmobiMediationVungleAdapter"
+PodName="NoxmobiISTempAdapters"
 
 echo "\n🔥当前版本号："
 # 打印一下当前情况
@@ -15,7 +15,7 @@ srcCommand="pod spec lint $PodName.podspec"
 # push的原命令
 pushCommand="pod trunk push $PodName.podspec"
 # 附加命令参数：--skip-import-validation
-subCommand="--skip-import-validation"
+subCommand="--skip-import-validation --allow-warnings"
 echo "\n🔥是否附加--skip-import-validation参数[y/n]"
 read flag
 if [[ "$flag" == "y" ]]
